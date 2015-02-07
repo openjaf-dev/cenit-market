@@ -1,0 +1,51 @@
+---
+- name: "Categories"
+  position: 0
+  taxons:
+    - name: "Categories"
+      position: 0
+    - name: "Agriculture & Food"
+      parent: "Categories"
+      position: 1
+    - name: "Apparel,Textiles & Accessories"
+      parent: "Categories"
+      position: 2
+    - name: "Auto & Transportation"
+      parent: "Categories"
+      position: 3
+    - name: "Bags, Shoes & Accessories"
+      parent: "Categories"
+      position: 4
+    - name: "Electronics"
+      parent: "Categories"
+      position: 5
+    - name: "Electrical Equipment, Components & Telecoms"
+      parent: "Categories"
+      position: 6
+    - name: "Gifts, Sports & Toys"
+      parent: "Categories"
+      position: 7
+    - name: "Hosiery, Leggings & Socks"
+      parent: "Categories"
+      position: 8
+    - name: "Health & Beauty"
+      parent: "Categories"
+      position: 9
+    - name: "Health & Beauty"
+      parent: "Categories"
+      position: 10
+    - name: "Health & Beauty"
+      parent: "Categories"
+      position: 11
+    - name: "Home, Lights & Construction"
+      parent: "Categories"
+      position: 12
+    - name: "Machinery, Industrial Parts & Tools"
+      parent: "Categories"
+      position: 13                 
+    - name: "Metallurgy, Chemicals, Rubber & Plastics"
+      parent: "Categories"
+      position: 14
+    - name: "Packaging, Advertising & Office"
+      parent: "Categories"
+      position: 15
