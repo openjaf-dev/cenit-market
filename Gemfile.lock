@@ -71,6 +71,16 @@ GIT
       multi_json
       spree_core (~> 3.0.0.beta)
 
+GIT
+  remote: git@github.com:spree/spree_wombat.git
+  revision: ad28d9f7b88ef9b6efe76d6096e4af6063c1b329
+  branch: master
+  specs:
+    spree_wombat (2.2.0)
+      active_model_serializers (= 0.9.0.alpha1)
+      httparty
+      spree_core (~> 3.0.0.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -93,6 +103,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    active_model_serializers (0.9.0.alpha1)
+      activemodel (>= 3.2)
     active_utils (2.2.3)
       activesupport (>= 2.3.11)
       i18n
@@ -380,6 +392,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree!
   spree_auth_devise!
+  spree_wombat!
   spring
   sqlite3
   turbolinks

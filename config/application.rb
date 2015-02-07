@@ -40,3 +40,9 @@ module Sandbox
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+
+# Load Wombat webhook handlers
+Dir.glob(File.join(File.dirname(__FILE__), "../lib/**/*_handler.rb")) do |c|
+  Rails.configuration.cache_classes ? require(c) : load(c)
+end
+        

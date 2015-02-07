@@ -45,6 +45,7 @@ end
 
 gem 'spree',github: 'spree/spree', branch: 'master'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
+gem 'spree_wombat', git: 'git@github.com:spree/spree_wombat.git', branch: 'master'
 
 group :test, :development do
   gem 'bullet'
