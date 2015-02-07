@@ -51,4 +51,5 @@ group :test, :development do
   gem 'bullet'
   gem 'pry-byebug'
   gem 'rack-mini-profiler'
+  gem 'ffaker'
 end

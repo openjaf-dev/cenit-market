@@ -1,0 +1,24 @@
+<!-- replace "[data-hook='product_price']" -->
+<div data-hook="product_price" class="col-md-10">
+  <div class=" col-md-12">
+    <br/>
+    <div class="input-group col-md-12">
+      <div class='col-md-4'>
+        <%= number_field_tag :quantity, 1, :class => 'title form-control', :min => 1 %>
+      </div>
+
+      <div class='col-md-4'>
+        <% units = ["20' Container", "40' Container", "40' HQ Container", "Ampere/Amperes", "Bags", "Barrel/Barrels"] %>
+        <%= select_tag :quantity_unit,
+         options_for_select(units,"Pieces"), 'aria-label' => 'Quantity Unit', class: "form-control" %>
+      </div>
+
+      <div class="input-group-btn col-md-4">
+        <%= button_tag :class => 'btn btn-success', :id => 'add-to-cart-button', :type => :submit do %>
+          <%= Spree.t(:add_to_cart) %>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<!-- insert_after '.product-title' -->
+<%= "FOB Price: US $159 - 219 / Piece Get Latest Price" %><br>
+<%= "Min.Order Quantity: 1 Piece/Pieces" %><br>
+<%= "Supply Ability: 5000 Piece/Pieces per Month" %><br>
+<%= "Port: Ningbo" %><br>
+<%= "Payment Terms: L/C,D/A,D/P,T/T,Western Union,MoneyGram" %><br>
+<br />

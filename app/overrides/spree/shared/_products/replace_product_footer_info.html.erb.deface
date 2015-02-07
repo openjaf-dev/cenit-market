@@ -1,0 +1,13 @@
+<!-- replace '.panel-footer' -->
+<div class="panel-footer text-left">
+  <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <% product.product_properties.each_with_index do |product_property, index| %>
+      <% if index <= 2 %>
+        <%= product_property.property.presentation.truncate(15) %>: <%= product_property.value.truncate(15) %><br>
+      <% end %>
+    <% end %>
+  </span>
+  <% if (filled_lines = product.product_properties.count) < 3 %>
+    <%= product.description.truncate(35 * (2 - filled_lines) )%>
+  <% end %>
+</div>

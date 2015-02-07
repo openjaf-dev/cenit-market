@@ -23,6 +23,8 @@ module Sandbox
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
+    
+    config.autoload_paths << "#{config.root}/lib"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -45,4 +47,6 @@ end
 Dir.glob(File.join(File.dirname(__FILE__), "../lib/**/*_handler.rb")) do |c|
   Rails.configuration.cache_classes ? require(c) : load(c)
 end
+
+require "#{Rails.root}/lib/spree_sample.rb"
         

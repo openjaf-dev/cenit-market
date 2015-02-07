@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150206124432) do
+ActiveRecord::Schema.define(version: 20150207172026) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -100,6 +100,14 @@ ActiveRecord::Schema.define(version: 20150206124432) do
 
   add_index "spree_calculators", ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type"
   add_index "spree_calculators", ["id", "type"], name: "index_spree_calculators_on_id_and_type"
+
+  create_table "spree_companies", force: :cascade do |t|
+    t.string   "name"
+    t.string   "business_type"
+    t.text     "description"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "spree_countries", force: :cascade do |t|
     t.string   "iso_name"
@@ -396,9 +404,11 @@ ActiveRecord::Schema.define(version: 20150206124432) do
     t.datetime "updated_at",                          null: false
     t.boolean  "promotionable",        default: true
     t.string   "meta_title"
+    t.integer  "company_id"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on"
+  add_index "spree_products", ["company_id"], name: "index_spree_products_on_company_id"
   add_index "spree_products", ["deleted_at"], name: "index_spree_products_on_deleted_at"
   add_index "spree_products", ["name"], name: "index_spree_products_on_name"
   add_index "spree_products", ["shipping_category_id"], name: "index_spree_products_on_shipping_category_id"

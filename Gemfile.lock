@@ -383,6 +383,7 @@ DEPENDENCIES
   bullet
   byebug
   coffee-rails (~> 4.1.0)
+  ffaker
   jbuilder (~> 2.0)
   jquery-rails
   pry-byebug
