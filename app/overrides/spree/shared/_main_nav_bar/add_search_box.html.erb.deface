@@ -1,0 +1,2 @@
+<!-- insert_before '.navbar-right' -->
+<%= render :partial => 'spree/shared/nav_bar' %>
